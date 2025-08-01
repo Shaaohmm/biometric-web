@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biometric System - Main</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #444;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+    .btn {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      cursor: pointer;
+      color: white;
+    }
+    .btn-login {
+      background: #007bff;
+    }
+    .btn-signup {
+      background: #28a745;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>ระบบยืนยันตัวตน</h1>
+    <form id="main-form">
+      <label>ชื่อ - นามสกุล</label>
+      <input type="text" id="name" placeholder="กรอกชื่อ-นามสกุล" required>
+      <label>เบอร์โทรศัพท์</label>
+      <input type="text" id="phone" placeholder="กรอกเบอร์โทรศัพท์" required>
+      <button type="button" class="btn btn-signup" onclick="goToSignUp()">Sign up</button>
+      <button type="button" class="btn btn-login" onclick="goToLogin()">Login</button>
+    </form>
+  </div>
+
+  <script>
+    function goToSignUp() {
+      window.location.href = "signup.html";
+    }
+
+    function goToLogin() {
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

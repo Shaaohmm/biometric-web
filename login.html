@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biometric System - Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 320px;
+      text-align: center;
+    }
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      background: #007bff;
+      border: none;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>เข้าสู่ระบบ (Login)</h1>
+    <p>กดปุ่มด้านล่างเพื่อตรวจสอบตัวตน</p>
+    <button onclick="goToColabLogin()">ตรวจสอบตัวตน (Colab)</button>
+  </div>
+
+  <script>
+    function goToColabLogin() {
+      // URL ของ Colab สำหรับ Login
+      window.location.href = "https://colab.research.google.com/drive/1FHatKTIipY_lRh_jeOWdJULfYVAWEQze?authuser=1#scrollTo=e7cM4XK9phZi";
+    }
+  </script>
+</body>
+</html>
